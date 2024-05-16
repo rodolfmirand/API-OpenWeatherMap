@@ -1,0 +1,7 @@
+spring.application.name=demo
+
+openweathermap.api.key=
+openweathermap.api.url=http://api.openweathermap.org/data/2.5/weather
+
+spring.thymeleaf.prefix=classpath:/templates/
+spring.thymeleaf.suffix=.html
