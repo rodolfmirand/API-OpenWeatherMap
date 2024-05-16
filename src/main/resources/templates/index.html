@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climas</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="../static/js/weather.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">
+            <h2>Cidade: </h2>
+            <nav class="navbar">
+                <form role="search">
+                    <input class="inpt" id="inputValue" type="search" placeholder="Digite o nome da cidade">
+                    <button class="bttn" onclick="getWeather()">Pesquisar</button>
+                </form>
+            </nav>
+        </div>
+        <div class="item">
+            <table id="weatherTable">
+                <thead>
+                    <tr class="tr-header">
+                        <td>Cidade</td>
+                        <td>Temperatura (Cº)</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
