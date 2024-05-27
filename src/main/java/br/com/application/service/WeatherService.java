@@ -37,6 +37,5 @@ public class WeatherService {
         JsonNode mainNode = rootNode.path("main");
         return mainNode.path("temp").asDouble();
     }
-
     
 }

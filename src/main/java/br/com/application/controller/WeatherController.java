@@ -18,13 +18,7 @@ public class WeatherController {
     private WeatherService service;
 
     @GetMapping("/weather")
-    public double getWeather(@RequestParam("city") String city) {
-        String response = service.getWeather(city);
-        try {
-            return service.getTemp(response);
-        } catch (IOException e) {
-            e.printStackTrace();
-            return -1;
-        }
+    public String getWeather(@RequestParam("city") String city) throws IOException {
+        return service.getWeather(city);
     }
 }
